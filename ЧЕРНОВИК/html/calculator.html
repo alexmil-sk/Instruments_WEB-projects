@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../styles/style.css" rel="stylesheet" type="text/css">
+	<title>Калькулятор</title>
+	<script defer src="luxon.js"></script>
+	
+
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Применение системы модулей на практике</h1>
+		<button onclick="show" class="mainBtn" id="mainBtn">Таймер / Калькулятор дат</button>
+		<form class="calcDate hide" id="calcForm">
+			<h2>Калькулятор дат</h2>
+			<div class="calcDate__item">
+				<label for="date1">
+					<strong>Первая дата</strong>
+					<input type="date" name="date1" id="date1">
+				</label>
+				<label for="date2">
+					<strong>Вторая дата</strong>
+					<input type="date" name="date2" id="date2">
+				</label>
+				<button type="submit">Рассчитать промежуток</button>
+			</div>
+			<h2 id="datecalc__result"></h2>
+		</form>
+		<form class="timer" id="timerForm">
+			<h2>Таймер отсчета до указанной даты</h2>
+			<div class="timer__item">
+				<label for="timer1">
+					<p><strong>Текущая дата</strong></p>
+					<h2 type="date" name="timerDate1" id="timerDate1"></h2>
+					
+				</label>
+				<label for="timer2">
+					<p><strong>Конечная дата</strong></p>
+					<input type="date" name="timerDate2" id="timerDate2">
+				</label>
+				<button onclick="TimerX" id="setTimer">Сброс</button>
+				<button onclick="" id="pauseTimer">Стоп</button>
+			</div>
+			<h2 id="timer__result1" class=""></h2>
+			<hr>
+			<h2>Таймер-секундомер обратного отсчета</h2>
+			<div class="timer2">
+				<button onclick="" id="startTimer2">Пуск</button>
+				<h2 id="timer__result2" class="">00 : 00</h2>
+				<button id="stopTimer2">Стоп</button>
+			</div>
+			
+		</form>
+	</div>
+
+
+</body>
+</html>
